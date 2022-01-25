@@ -1,3 +1,7 @@
+/* 
+dusty pink - #fdf7ff
+peach - #fffade
+*/
 html {
   box-sizing: border-box;
 }
@@ -11,6 +15,7 @@ body {
 	background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/space.jpg');
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	color: #fff;
 }
 .wrapper {
@@ -29,7 +34,7 @@ section {
 aside {
 	flex-basis: 33%;
 }
-p {
+p, [for='abtype'], [for='request'], [for='subscribe'] {
 	margin-bottom: 0;
 	margin-top: 2rem;
 }
@@ -38,19 +43,68 @@ fieldset{
 	margin: 3rem 0;
 	border: 0.5px solid #ffffff80;
 	border-radius: 0.7rem;
+	padding-bottom: 1rem;
 }
 
 legend{
 	font-size: 2rem;
-	margin: 0 0 0 1rem;
+	margin: 0 0 1rem 1rem;
+
+}
+
+label{
+	display: block;
+	margin: 0.3rem 0;
+}
+
+textarea{
+	height: 10rem;
+	width: 100%;
+	resize: none;
+	border-radius: 0.4rem;
+	border: #00000080;
+}
+
+select{
+	font-size: 1rem;
+}
+button{
+	background-color: #fdf7ff;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+	display: block;
+	margin: auto;
+	border: none;
+	border-radius: 0.3rem;
+	transition: 0.4s ease-in-out;
+}
+button:hover{
+	font-size: 1.25rem;
+	background-color: #f5defd;
+	border-radius: 0;
+}
+
+input:not([type='radio']):not([type='checkbox']){
+	display: block;
+	margin-bottom: 1rem;
+	width: 20rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3rem;
+	padding: 0.5rem 0.5rem;
+	border-radius: 0.5rem;
+	border: none;
+}
+input, textarea{
+	transition: 0.3s ease-in-out;
+}
+input:focus, textarea:focus{
+	transform: scale(1.008);
+	outline: none;
+	box-shadow: 0px 0px 8px 0px #f5defd99;
+	-moz-box-shadow: 0px 0px 8px 0px #f5defd99;
 	
 }
 
-
-
-
-
-
-
-
-
+iframe{
+	margin: 1rem 0;
+}
