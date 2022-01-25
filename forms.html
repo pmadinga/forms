@@ -10,17 +10,19 @@
 		<section>
 			<h1>Alien Abduction Order Form</h1>
 			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
-			<form action="">
+			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES
+			" method="post">
+			<input type="hidden" name="send_to" value="217383587@tut4life.ac.za">
 				<fieldset>
 					<legend>Your contact information</legend>
 					
 					<label for="name">Your name</label>
 					<input type="text" name="name" id="name">
 					
-					<label for="phoneNo">Phone number</label>
-					<input type="tel" name="phoneNo" id="phoneNo">
+					<label for="phone">Phone number</label>
+					<input type="tel" name="phone" id="phone">
 					
-					<label for="email">Phone number</label>
+					<label for="email">Email</label>
 					<input type="email" name="email" id="email">
 				</fieldset>
 
@@ -51,7 +53,7 @@
 					</label>
 						
 						
-					<label for="adtype">What type of abduction experience do you want?</label>
+					<label for="abtype">What type of abduction experience do you want?</label>
 					<select name="abtype" id="abtype">
 							<option selected>Select one...</option>
 							<option value="tour">Tour of the solar system</option>
@@ -61,13 +63,13 @@
 					</select>	
 					
 					<label for="request">Special requests:</label>
-					<textarea name="request" id="request" ></textarea>
+					<textarea name="comments" id="request" ></textarea>
 					<label for="subscribe"> 
 						<input type="checkbox" id="subscribe" name="subscribe" checked> Add me to your email list 
 					</label>
 					
 				</fieldset>
-				
+				<button type="submit">Submit</button>
 			</form>				
 		</section>
 		
@@ -81,6 +83,7 @@
 			</address>
 		</aside>
 	</div>
+	<script src="./js/forms.js"></script>
 </body>
 </html>
 
